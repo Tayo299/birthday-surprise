@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise Login</title>
+<link rel="stylesheet" href="love.css">
+</head>
+<body>
+
+<div class="phone-card">
+    <div class="inner-box">
+
+        <!-- Circular Avatar -->
+        <img src="circle1.jpg" class="avatar" alt="Profile" />
+
+        <!-- Big Image -->
+        <img src="big2.jpg" class="big-image" alt="Main" />
+
+       <!-- Countdown -->
+<div id="countdown" class="countdown-badge">
+  <span><b id="d">00</b><small>Days</small></span>
+  <span><b id="h">00</b><small>Hrs</small></span>
+  <span><b id="m">00</b><small>Min</small></span>
+  <span><b id="s">00</b><small>Sec</small></span>
+</div>
+        <!-- Hidden message (kept invisible) -->
+        <div id="secretMessage">Time is up! Try Login 🎉</div>
+
+        <!-- Login Form -->
+        <div class="login-group">
+            <input type="text" placeholder="Username" id="user">
+            <input type="password" placeholder="Password" id="pass">
+            <button id="loginBtn" onclick="login()" disabled>Login</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

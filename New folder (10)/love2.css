@@ -1,0 +1,132 @@
+body {
+    background: linear-gradient(135deg, #000, #8B0000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Phone-sized card */
+.phone-card {
+    width: 360px;
+    height: 700px;
+    background: #111;
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 0 8px 30px rgba(255,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Inner box */
+.inner-box {
+    background: #1b1b1b;
+    width: 90%;
+    border-radius: 25px;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    border: 1px solid red;
+}
+
+/* circular avatar */
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid red;
+    margin-top: -40px;
+}
+
+/* big image */
+.big-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 12px;
+}
+
+/* countdown badge */
+.countdown-badge {
+    background: red;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 15px 0;
+    box-shadow: 0 0 10px red;
+}
+
+/* login inputs */
+.login-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-group input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid red;
+    background: #222;
+    color: white;
+}
+
+.login-group button {
+    padding: 12px;
+    background: red;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* hidden text */
+#secretMessage {
+    color: yellow;
+    margin-bottom: 10px;
+    display: none;
+}
+#nameReveal {
+    position: absolute;
+    top: 20%;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff4d4d;
+    opacity: 0;
+    text-align: center;
+    animation: fadeInName 3s forwards;
+    text-shadow: 0 0 15px red;
+}
+
+@keyframes fadeInName {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#finalLine {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff4d4d;
+    text-align: center;
+    margin-top: 15px;
+    animation: glowPulse 1.5s infinite alternate;
+    text-shadow: 0 0 10px red, 0 0 20px #ff6666;
+}
+
+@keyframes glowPulse {
+    from { text-shadow: 0 0 10px red, 0 0 20px #ff6666; }
+    to { text-shadow: 0 0 20px red, 0 0 35px #ff9999; }
+}

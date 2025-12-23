@@ -1,0 +1,102 @@
+body {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Phone-sized card */
+.phone-card {
+    width: 360px;
+    height: 700px;
+    background: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Inner box */
+.inner-box {
+    background: #f9f9f9;
+    width: 90%;
+    border-radius: 25px;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+/* Circular avatar */
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #2196F3;
+    margin-top: -40px;
+}
+
+/* Big image */
+.big-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 12px;
+}
+
+
+.countdown-badge {
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 25px;
+    margin: 15px 0;
+    box-shadow: 0 0 12px red;
+}
+
+.countdown-badge span {
+    text-align: center;
+    flex: 1;
+}
+
+.countdown-badge b {
+    display: block;
+    font-size: 22px;
+}
+
+.countdown-badge small {
+    font-size: 11px;
+    opacity: 0.9;
+}
+
+/* Login inputs */
+.login-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-group input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.login-group button {
+    padding: 12px;
+    background: #2196F3;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
